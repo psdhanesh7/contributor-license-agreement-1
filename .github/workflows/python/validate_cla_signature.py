@@ -5,7 +5,7 @@ import subprocess
 import re
 
 def extract_personal_contributer_details():
-	f = open('../../../personal_contributor_licence_agreement.md')
+	f = open('/personal_contributor_licence_agreement.md')
 	personal_cla_contents = f.read()
 
 	personal_contributers_regex = re.compile('\| *\[([^\s]+)\]\([^\s]+\) *\|')
@@ -15,7 +15,7 @@ def extract_personal_contributer_details():
 
 
 def extract_employer_contributer_details():
-	f = open('../../../employer_contributor_license_agreement.md')
+	f = open('/employer_contributor_license_agreement.md')
 	employer_cla_contents = f.read()
 
 	employer_contributers_regex = re.compile('\| *\[([^\s]+)\]\([^\s]+\) *\|')

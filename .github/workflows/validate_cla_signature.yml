@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  one:
+  Validate CLA Signature:
     runs-on: ubuntu-latest
     strategy:
       matrix:
