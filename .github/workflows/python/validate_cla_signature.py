@@ -69,7 +69,7 @@ employer_contributers = extract_employer_contributer_details()
 
 for user in commit_logins:
     if user not in personal_contributers and user not in employer_contributers:
-        print("Error! User has not signed the contributer licence agreement.")
+        print("Error!" + user + "has not signed the contributer licence agreement.")
         sys.exit(1)
 
 print("All github users who made changes to the pull request: ", commit_logins)
