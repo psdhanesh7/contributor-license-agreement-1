@@ -5,9 +5,10 @@ on:
   pull_request:
     branches:
       - main
+      - enforce-cla-checks
 
 jobs:
-  Validate CLA Signature:
+  validate-cla-signature:
     runs-on: ubuntu-latest
     strategy:
       matrix:
