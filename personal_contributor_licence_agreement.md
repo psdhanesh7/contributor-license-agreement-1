@@ -79,4 +79,3 @@ I agree with all the terms and conditions above by providing my details in **tab
 ## **Table-A**: Signed by
 | Name (“You”) | Github ID | Date |
 | --- | --- | --- |
-| `Dhanesh P S` | [psdhanesh7](https://github.com/psdhanesh7) |10-September-2021|
