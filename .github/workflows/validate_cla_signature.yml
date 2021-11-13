@@ -40,8 +40,8 @@ jobs:
         run: |
           which git
           if ! python ./.github/workflows/python/validate_cla_signature.py; then
-              echo "Please sign the Contributer Licence Agreement before contributing to this repository"
-              echo "You can sign the CLA here http://brackets.io/contributor-license-agreement/"
+              echo "Please sign the Contributer Licence Agreement before contributing to this repository."
+              echo "You can sign the CLA here: http://brackets.io/contributor-license-agreement/"
               exit 1
           else
               echo "all good"
