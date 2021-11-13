@@ -8,7 +8,7 @@ on:
       - enforce-cla-checks
 
 jobs:
-  one:
+  validate-cla-signature:
     runs-on: ubuntu-latest
     strategy:
       matrix:
