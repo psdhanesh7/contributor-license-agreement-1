@@ -70,7 +70,7 @@ personal_contributers = extract_personal_contributer_details()
 employer_contributers = extract_employer_contributer_details()
 
 for user in commit_logins:
-    if user not in personal_contributers and user not in employer_contributers:
+    if user != 'web-flow' and user not in personal_contributers and user not in employer_contributers:
         print("Error!" + user + "has not signed the contributer licence agreement.")
         sys.exit(1)
 
