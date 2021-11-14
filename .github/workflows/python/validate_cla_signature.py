@@ -61,6 +61,8 @@ for commit in commit_details:
     commiter_github_login = commit['committer']['login']
     if commiter_github_login not in commit_logins:
         commit_logins.append(commiter_github_login)
+	
+print("All github users who made changes to the pull request: ", commit_logins)
 
 # github login of all contributers who has signed personal CLA
 personal_contributers = extract_personal_contributer_details()
@@ -72,4 +74,4 @@ for user in commit_logins:
         print("Error! User has not signed the contributer licence agreement.")
         sys.exit(1)
 
-print("All github users who made changes to the pull request: ", commit_logins)
+
